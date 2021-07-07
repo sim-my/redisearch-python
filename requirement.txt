@@ -1,0 +1,5 @@
+hiredis==2.0.0
+redis==3.5.3
+redisearch==2.0.0
+rmtest==0.7.0
+six==1.16.0
