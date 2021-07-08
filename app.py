@@ -8,7 +8,10 @@ client = Client("index-document")
 definition = IndexDefinition(prefix='doc:')
 
 # Creating the index definition and schema
-client.create_index((TextField("title"), TextField("body")), definition=definition)
+try:
+    client.create_index((TextField("title"), TextField("body")), definition=definition)
+except:
+    pass
 
 folder = "/home/simran/projects/redisearch/documents/"
 
